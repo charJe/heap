@@ -18,7 +18,7 @@ Here is an example of how you would use it (from example.c):
     int d = 10;
     HEAP_ADD(heap, (void*)(&d));
     int e = 8;
-    /* must cast and referenc generic element */
+    /* must cast and reference generic element */
     HEAP_ADD(heap, (void*)(&e));
     int f = 3;
     HEAP_ADD(heap, (void*)(&f));
