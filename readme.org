@@ -43,3 +43,9 @@ Here is an example of how you would use it (from example.c):
 
 #+end_src
 
+You can try this example yourself by executing the following commands:
+#+begin_src bash
+$ git clone https://github.com/charJe/heap.git
+$ cd heap
+$ make test
+#+end_src
