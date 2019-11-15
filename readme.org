@@ -40,7 +40,7 @@ Here is an example of how you would use it (from example.c):
         else
             break;
     }
-
+    HEAP_DESTROY(heap);
 #+end_src
 
 You can try this example yourself by executing the following commands:

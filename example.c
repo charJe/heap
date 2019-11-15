@@ -54,5 +54,6 @@ int main(int argc, char** argv) {
         else
             break;
     }
+    HEAP_DESTROY(heap);
     return 0;
 }
