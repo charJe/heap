@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     int d = 10;
     HEAP_ADD(heap, (void*)(&d));
     int e = 8;
-    /* must cast and referenc generic element */
+    /* must cast and reference generic element */
     HEAP_ADD(heap, (void*)(&e));
     int f = 3;
     HEAP_ADD(heap, (void*)(&f));
