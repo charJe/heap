@@ -82,3 +82,9 @@ void* HEAP_REMOVE(Heap* self) {
     }
     return min;
 }
+/**
+ * Returns the length of the heap. 
+ */
+int HEAP_EMPTY(Heap* self) {
+    return self->length;
+}
