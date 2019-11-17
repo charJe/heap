@@ -53,5 +53,11 @@ void* HEAP_PEEK(Heap*);
  * Returns the element of the given heap with the highest priority
  */
 void* HEAP_REMOVE(Heap*);
+/**
+ * Returns the length of the heap. 
+ */
+int HEAP_EMPTY(Heap* self) {
+    return self->length;
+}
 
 #endif // HEAP_H
