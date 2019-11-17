@@ -24,11 +24,11 @@ typedef struct {
     int maxSize;
 } Heap;
 /**
- * This function allocates a heap of size `maxSize' 
- * prioritized by `compare'.
- * @param compare The function to compare elements.
- * @param maxSize The maximum number of elements in the heap.
- * @return A new Heap.
+ * This function allocates a heap of size `maxSize`
+ * prioritized by `compare`.
+ * compare: The function to compare elements.
+ * maxSize: The maximum number of elements in the heap.
+ * Returns a new Heap.
  */
 Heap* HEAP_INIT(int (*compare)(void*, void*), int maxSize);
 /**
@@ -36,21 +36,21 @@ Heap* HEAP_INIT(int (*compare)(void*, void*), int maxSize);
  */
 void HEAP_DESTROY(Heap*);
 /**
- * This procedure adds `elem' to the given heap
- * @param elem the element to be added to the given heap
- * @returns zero if added succesfully 
+ * This procedure adds `elem` to the given heap
+ * elem: the element to be added to the given heap
+ * Returns zero if added succesfully 
  * and a positive number if maxSize was reached.
  */
 int HEAP_ADD(Heap*, void* elem);
 /**
  * This function returns the first element of the given heap
  * It does not remove the element from the given heap
- * @return The element of the given heap with the highest priority
+ * Returns the element of the given heap with the highest priority
  */
 void* HEAP_PEEK(Heap*);
 /**
  * This function will remove the first element of the given heap and return it.
- * @return The element of the given heap with the highest priority
+ * Returns the element of the given heap with the highest priority
  */
 void* HEAP_REMOVE(Heap*);
 
