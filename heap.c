@@ -26,14 +26,14 @@ int HEAP_ADD(Heap* self, void* elem) {
     int i = self->length;   /* index to insert at */
     self->heap[i] = elem;
     /* trickle up */
-    int parent = (i % 2)? i/2 : (i-1)/2;
+    int parent = (i % 2 == 0)? i/2 : (i-1)/2;
     while(parent > 0 && self->compare(self->heap[parent], self->heap[i]) > 0) {
         /* swap parent and child */
         void* temp = self->heap[i];
         self->heap[i] = self->heap[parent];
         self->heap[parent] = temp;
         i = parent;
-        parent = (i % 2)? i/2 : (i-1)/2;
+        parent = (i % 2 == 0)? i/2 : (i-1)/2;
     }
     return 0;
 }
@@ -81,4 +81,7 @@ void* HEAP_REMOVE(Heap* self) {
         self->heap[i] = temp;
     }
     return min;
+}
+int HEAP_EMPTY(Heap* self) {
+    return self->length == 0;
 }

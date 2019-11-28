@@ -56,8 +56,6 @@ void* HEAP_REMOVE(Heap*);
 /**
  * Returns the length of the heap. 
  */
-int HEAP_EMPTY(Heap* self) {
-    return !(self->length);
-}
+int HEAP_EMPTY(Heap* self);
 
 #endif // HEAP_H
